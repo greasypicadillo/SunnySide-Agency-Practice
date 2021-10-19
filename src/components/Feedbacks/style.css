@@ -1,0 +1,78 @@
+.feedbacks {
+    background-color: #fff;
+}
+
+.feedbacks-wrap {
+    text-align: center;
+    padding: 9.05rem 0 9rem;
+    background-color: #fff;
+    min-height: 734px;
+}
+
+.feedbacks-header {
+    margin-bottom: 4.7rem;
+    text-transform: uppercase;
+    color: rgb(139, 139, 139);
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+}
+
+.feedbacks-cards {
+    margin: 0 9rem;;
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-text {
+    color: rgb(139, 139, 139);
+    font-family: "Barlow", sans-serif;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+}
+
+.feedback-author {
+    margin-right: 1rem;
+}
+
+.author-name {
+    margin-bottom: 0.4rem;
+}
+
+.author-position {
+    font-family: 'Barlow', sans-serif;
+    color: rgb(175, 175, 175);
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    .feedbacks-cards {
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+
+    .card {
+        flex: 1;
+        min-height: 300px;
+        margin-bottom: 4rem;
+    }
+
+    .feedback-text {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    .feedbacks-wrap {
+        padding: 0;
+        padding-top: 4rem;
+    }
+}

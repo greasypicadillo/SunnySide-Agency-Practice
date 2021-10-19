@@ -1,0 +1,128 @@
+.nav-wrap {
+	display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 5fr 1.1fr 1fr;
+    gap: 1.7rem;
+    align-items: center;
+    padding: 0 1.7rem;
+    font-family: "Barlow", sans-serif;
+    position: sticky;
+    left: 0px;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background: #3dbeff;
+}
+
+.nav-logo-wrap {
+	display: grid;
+    place-items: center;
+    width: 169px;
+    margin-left: .6rem;
+}
+
+.nav-logo {
+	fill: #fff;
+}
+
+.contact-btn {
+	justify-self: center;
+	padding: 15px 30px;
+	background: #fff;
+	border: none;
+	border-radius: 25px;
+	font-family: "Fraunces", serif;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.contact-btn:hover {
+	background: rgba(255, 255, 255, 0.3);
+	color: #fff;
+}
+
+/*! MOBILE MENU !*/
+
+.mobile-menu-icon {
+	width: 25px;
+	height: 30px;
+	display: none;
+	cursor: pointer;
+}
+
+.mobile-menu-icon svg {
+	fill: #fff;
+}
+
+.mobile-menu {
+	display: flex;
+	height: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	clip-path: polygon(0 7%, 90% 7%, 100% 0, 100% 100%, 0 100%);
+	background-color: #fff;
+	top: 60px;
+	left: 1.5rem;
+	right: 1.5rem;
+	height: 40vh;
+	transition: all 0.2s;
+}
+
+.mobile-menu .nav-links-wrap {
+	display: flex;
+	color: #807F85;
+	min-height: 0;
+	flex-direction: column;
+	margin-bottom: 1.3rem;
+	gap: 1rem;
+}
+
+.mobile-menu .nav-link {
+	font-size: 1.2rem;
+}
+
+.mobile-menu .contact-btn {
+	background-color: #FBD700;
+	font-size: 1rem;
+	display: block;
+}
+
+.mobile-menu .contact-btn:hover {
+	background-color: #fbf700;
+	color: #333;
+}
+
+/*! MEDIA !*/
+
+@media screen and (max-width: 750px) {
+	.nav-links-wrap,
+	.contact-btn {
+		display: none;
+	}
+
+	.nav-wrap {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.mobile-menu-icon {
+		display: block;
+		justify-self: end;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.nav-wrap {
+		grid-template-rows: 88px;
+		padding: 0 1.5rem;
+		position: fixed;
+	}
+
+	.nav-logo-wrap {
+		width: 124px;
+		margin-left: 0;
+	}
+}

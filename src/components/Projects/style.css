@@ -1,0 +1,24 @@
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 447px;
+}
+
+.project-item {
+	flex: 1 1 25%;
+	min-height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (max-width: 1150px) {
+	.project-item {
+		flex: 1 1 50%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.projects {
+		min-height: 400px;
+	}
+}
